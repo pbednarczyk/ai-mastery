@@ -1,6 +1,8 @@
 import json
 import logging
 import sys
+import time
+import uuid
 from typing import Any
 
 
@@ -20,7 +22,9 @@ class JsonFormatter(logging.Formatter):
             "level": record.levelname,
             "logger": record.name,
             "message": record.getMessage(),
+            "ts": time.strftime("%Y-%m-%dT%H:%M:%S"),
         }
+        base.setdefault("request_id", str(uuid.uuid4()))
         if record.exc_info:
             base["exc_info"] = self.formatException(record.exc_info)
         return json.dumps(base, ensure_ascii=False)
