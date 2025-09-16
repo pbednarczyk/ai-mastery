@@ -1,0 +1,68 @@
+# --- Python basics ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Virtual envs ---
+.venv/
+env/
+venv/
+ENV/
+*.egg-info/
+*.egg
+
+# --- Poetry ---
+poetry.lock
+
+# --- Logs & debug ---
+*.log
+*.out
+*.err
+
+# --- IDE / Editor ---
+.vscode/
+.idea/
+*.swp
+*~
+
+# --- Coverage / testing ---
+.coverage
+coverage.xml
+htmlcov/
+.pytest_cache/
+.tox/
+.nox/
+
+# --- Mypy / Ruff / Black cache ---
+.mypy_cache/
+.ruff_cache/
+.dmypy.json
+.dmypy.json.*/
+
+# --- FastAPI / Uvicorn ---
+*.db
+*.sqlite3
+
+# --- Build / dist ---
+build/
+dist/
+*.tar.gz
+*.whl
+
+# --- Other ---
+.DS_Store
+Thumbs.db
+
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+*.egg-info/
+.poetry/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.DS_Store
+Thumbs.db
